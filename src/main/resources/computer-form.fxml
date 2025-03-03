@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="org.unicodesys.petrolstationmanager.controller.ComputerFormController"
+      spacing="10">
+
+    <padding>
+        <Insets top="10" right="10" bottom="10" left="10"/>
+    </padding>
+
+    <Label text="Computer Details" style="-fx-font-size: 16px; -fx-font-weight: bold;" />
+
+    <Label text="Computer ID:" />
+    <Label fx:id="computerIdLabel" text="(Auto-generated)" />
+
+    <Label text="Computer Name:" />
+    <TextField fx:id="computerNameField" />
+
+    <Label text="IP Address:" />
+    <TextField fx:id="ipAddressField" />
+
+    <Label text="Computer Type:" />
+    <ComboBox fx:id="computerTypeComboBox" />
+
+    <Label text="Petrol Station ID:" />
+    <TextField fx:id="petrolStationIdField" />
+
+    <HBox spacing="10">
+        <Button fx:id="saveButton" text="Save" onAction="#handleSave"/>
+        <Button fx:id="cancelButton" text="Cancel" onAction="#handleCancel"/>
+    </HBox>
+
+</VBox>
+

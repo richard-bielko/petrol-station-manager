@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="org.unicodesys.petrolstationmanager.controller.MainController"
+      spacing="10">
+
+    <padding>
+        <Insets top="10" right="10" bottom="10" left="10"/>
+    </padding>
+
+    <!-- Petrol Stations Section -->
+    <Label text="Petrol Stations" style="-fx-font-size: 16px; -fx-font-weight: bold;" />
+    <ScrollPane fitToWidth="true">
+        <ListView fx:id="petrolStationList" prefHeight="200" />
+    </ScrollPane>
+
+    <HBox spacing="10">
+        <Button fx:id="createStationButton" text="Create New Station" />
+        <Button fx:id="updateStationButton" text="Update Station" />
+        <Button fx:id="deleteStationButton" text="Delete Station" />
+    </HBox>
+
+    <!-- Computers Section -->
+    <Label text="Computers" style="-fx-font-size: 16px; -fx-font-weight: bold;" />
+    <ScrollPane fitToWidth="true">
+        <ListView fx:id="computerList" prefHeight="200" />
+    </ScrollPane>
+
+    <HBox spacing="10">
+        <Button fx:id="createComputerButton" text="Create New Computer" />
+        <Button fx:id="updateComputerButton" text="Update Computer" />
+        <Button fx:id="deleteComputerButton" text="Delete Computer" />
+    </HBox>
+
+</VBox>
