@@ -3,7 +3,6 @@ package org.unicodesys.petrolstationmanager.service;
 import org.unicodesys.petrolstationmanager.database.ComputerDao;
 import org.unicodesys.petrolstationmanager.model.Computer;
 import org.unicodesys.petrolstationmanager.model.PetrolStation;
-import org.unicodesys.petrolstationmanager.utils.Logger;
 
 import java.util.List;
 
